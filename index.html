@@ -11,6 +11,7 @@
     </style>
 </head>
 <body>
+    <div class="progress-bar"></div>
     <nav>
         <div class="nav-content">
             <div class="logo">BrightFuture</div>
@@ -23,7 +24,7 @@
             </div>
         </div>
     </nav>
-
+    
     <section class="hero">
         <div class="hero-content">
             <h1>Empowering Children, Building Futures</h1>
@@ -36,21 +37,21 @@
         <h2 class="section-title">Our Programs</h2>
         <div class="program-grid">
             <div class="program-card">
-                <img src="/api/placeholder/400/300" alt="Art & Craft" class="program-image">
+                <img src="images/programs/art&craft.jpg" alt="Art & Craft" class="program-image">
                 <div class="program-content">
                     <h3>Art & Craft</h3>
                     <p>Nurturing creativity and self-expression through various art forms and crafting activities.</p>
                 </div>
             </div>
             <div class="program-card">
-                <img src="/api/placeholder/400/300" alt="Environmental Initiative" class="program-image">
+                <img src="images/programs/enviroment.jpg" alt="Environmental Initiative" class="program-image">
                 <div class="program-content">
                     <h3>Environmental Care</h3>
                     <p>Teaching environmental responsibility through clean-up drives and awareness programs.</p>
                 </div>
             </div>
             <div class="program-card">
-                <img src="/api/placeholder/400/300" alt="Girl Support" class="program-image">
+                <img src="images/programs/girl-support.jpg" alt="Girl Support" class="program-image">
                 <div class="program-content">
                     <h3>Girl Support</h3>
                     <p>Providing essential supplies and education to support young girls in their development.</p>
@@ -110,6 +111,107 @@
         </div>
     </section>
 
+    <section class="gallery">
+        <div class="gallery-content">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery/Art-workshop.jpeg" alt="Art Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Art Workshop</h3>
+                        <p>Children expressing creativity through painting</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/community-cleanup.jpeg" alt="Community Cleanup">
+                    <div class="gallery-overlay">
+                        <h3>Community Cleanup</h3>
+                        <p>Community effort to clean our beaches</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/girls.jpeg" alt="Girls Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Girls Workshop</h3>
+                        <p>Educational session on health and hygiene</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/culture-events.jpg" alt="Cultural Event">
+                    <div class="gallery-overlay">
+                        <h3>Cultural Event</h3>
+                        <p>Celebrating diversity through dance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <h2 class="section-title">What People Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide">
+                        <p>"The art programs have helped my daughter discover her creative potential. She's more confident now than ever."</p>
+                        <div class="testimonial-author">- Sarah Johnson, Parent</div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"The environmental initiatives teach our children to be responsible citizens. It's amazing to see them so passionate about cleaning up our community."</p>
+                        <div class="testimonial-author">- Michael Chen, Volunteer</div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"The support provided to young girls has made a significant impact in our community. It's truly transformative."</p>
+                        <div class="testimonial-author">- Emily Rodriguez, Community Leader</div>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button class="slider-button prev">Previous</button>
+                    <button class="slider-button next">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation">
+        <div class="donation-content">
+            <h2 class="section-title">Support Our Cause</h2>
+            <div class="donation-options">
+                <div class="donation-option" data-amount="25">
+                    <h3>Basic Support</h3>
+                    <div class="donation-amount">$25</div>
+                    <p>Provides art supplies for one child</p>
+                </div>
+                <div class="donation-option" data-amount="50">
+                    <h3>Regular Support</h3>
+                    <div class="donation-amount">$50</div>
+                    <p>Supports two girls with essential supplies</p>
+                </div>
+                <div class="donation-option" data-amount="100">
+                    <h3>Premium Support</h3>
+                    <div class="donation-amount">$100</div>
+                    <p>Funds a complete workshop session</p>
+                </div>
+            </div>
+            <div class="custom-donation">
+                <h3>Custom Amount</h3>
+                <input type="number" min="1" placeholder="Enter amount">
+                <button class="cta-button">Donate Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for updates on our activities and upcoming events.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="submit-button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="contact-content">
             <h2 class="section-title">Get in Touch</h2>
@@ -151,6 +253,15 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Thank You!</h2>
+            <p>Your submission has been received. We'll get back to you soon.</p>
+        </div>
+    </div>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -170,6 +281,101 @@
             e.preventDefault();
             alert('Thank you for your message! We will get back to you soon.');
             this.reset();
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuButton?.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Testimonial Slider
+        let currentSlide = 0;
+        const track = document.querySelector('.testimonial-track');
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevButton = document.querySelector('.slider-button.prev');
+        const nextButton = document.querySelector('.slider-button.next');
+
+        function updateSlider() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        prevButton?.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlider();
+        });
+
+        nextButton?.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+        });
+
+        // Auto-advance slides
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+        }, 5000);
+
+        // Donation Options
+        const donationOptions = document.querySelectorAll('.donation-option');
+        donationOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const amount = option.dataset.amount;
+                document.querySelector('.custom-donation input').value = amount;
+            });
+        });
+
+        // Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.querySelector('.progress-bar').style.width = scrolled + '%';
+        });
+
+        // Modal Handling
+        const modal = document.querySelector('.modal');
+        const closeModal = document.querySelector('.close-modal');
+
+        function showModal() {
+            modal.classList.add('active');
+        }
+
+        closeModal?.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        // Form Submissions
+        const contactForm = document.querySelector('.contact-form');
+        const newsletterForm = document.querySelector('.newsletter-form');
+
+        contactForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            showModal();
+            contactForm.reset();
+        });
+
+        newsletterForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            showModal();
+            newsletterForm.reset();
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
         });
     </script>
 </body>
